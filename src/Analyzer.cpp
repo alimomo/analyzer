@@ -49,7 +49,7 @@ void Analyzer::run()
 {
     //  check data members are set
     try{
-      
+
         if (mAddr == "" || mPort == 0 || mDevice == "")
         {
             throw gCount;
@@ -65,14 +65,13 @@ void Analyzer::run()
 
     //  call Packet.decodePacket() on each received message
 
-    //  add to vector of Packets
+    //  add to vector of Packets.
 
 }
 
 string Analyzer::getAddress() const{ return mAddr; }
 string Analyzer::getDeviceName() const{ return mDevice; }
 int Analyzer::getPort() const{ return mPort; }
-
 
 
 
