@@ -18,10 +18,18 @@ UserConsole::UserConsole(const string& inAddr, const int& inPort, const string& 
 void UserConsole::startAnalysis()
 //  construct 1 Analyzer object per GUI application, call it's 'run()' method & 'displayPackets()' method
 {
-    //  make sure 3
+    //  create Analyzer object & set parameters
     Analyzer alpha;
+
+    //  set parameters
     alpha.set("127.0.0.1", 8088, "enp0s3");
+
+    //  run Analyzer object
     alpha.run();
+
+    alpha.displayPackets();
+
+    //  display Analyzer object
 }
 
 
