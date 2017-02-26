@@ -143,7 +143,6 @@ void Analyzer::displayPackets()
 {
     cout << "displaying packets..\n";
     vector<Packet*>::iterator p = mPacketList.begin();
-    int i = 0;
     Packet* temp;
 
 
